@@ -21,6 +21,17 @@ int main(){
     return 0;
 }
 
+void mergesort(int *num, int beg, int end){
+    int NumOfElements=end-beg+1;
+    if(NumOfElements<2)
+        return;
+
+    int mid=(beg+end)/2;
+    mergesort(num, beg, mid);
+    mergesort(num, mid+1, end);
+    merge(num, beg, mid+1, end);
+}
+
 void merge(int *num, int beg1, int beg2, int end){
     int temp[100];
 
@@ -62,13 +73,4 @@ void merge(int *num, int beg1, int beg2, int end){
 }
 
 
-void mergesort(int *num, int beg, int end){
-    int NumOfElements=end-beg+1;
-    if(NumOfElements<2)
-        return;
 
-    int mid=(beg+end)/2;
-    mergesort(num, beg, mid);
-    mergesort(num, mid+1, end);
-    merge(num, beg, mid+1, end);
-}
