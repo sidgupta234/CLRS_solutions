@@ -1,3 +1,9 @@
+/*
+The selection sort is a combination of searching and sorting. During each pass, the unsorted element with the smallest (or largest)
+value is moved to its proper position in the array. The number of times the sort passes through the array is one less than the number
+of items in the array.
+*/
+
 #include <iostream>
 using namespace std;
 
