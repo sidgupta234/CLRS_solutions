@@ -5,7 +5,7 @@ void merge(int *num, int beg1, int beg2, int end);
 void mergesort(int *num, int beg, int end);
 
 int main(){
-    int num[100],n;
+    int num[100], n;
     cin>>n; //number of elements to be sorted
 
     for(int i=0;i<n;i++){
@@ -24,7 +24,7 @@ int main(){
 void merge(int *num, int beg1, int beg2, int end){
     int temp[100];
 
-    for(int i=0;i<=100;i++){
+    for(int i=0;i<end-beg1;i++){
         temp[i]=0;
     }
 
