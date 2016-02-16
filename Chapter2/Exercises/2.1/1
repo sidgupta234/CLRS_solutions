@@ -1,0 +1,8 @@
+// Each line denotes the array status after an iteration.
+A=<|31, 41, 59, 26, 41, 58> // '|' seperates the sorted and unsorted halves.
+A=<26|31, 41, 59, 41, 58>
+A=<26, 31|41, 59, 41, 58>
+A=<26, 31, 41|59, 41, 58>
+A=<26, 31, 41, 41|59, 58>
+A=<26, 31, 41, 41, 58|59> 
+A=<26, 31, 41, 41, 58, 59|>
