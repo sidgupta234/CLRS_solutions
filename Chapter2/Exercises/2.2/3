@@ -1,0 +1,29 @@
+Suppose there are n elements, every element is equally likely to be the element we are looking for, we'll exhaust all the possible cases
+and sum the number of comparisons for each case.
+
+indices = 1,2,3,4,...,n
+
+case #1
+ansindex = 1
+numberOfComparisons = 1
+
+case #2
+ansindex = 2
+numberOfComparisons = 2
+.
+.
+.
+case #n
+ansindex = n
+numberOfComparisons = n
+
+totalNumberOfComparisons = 1 + 2 + 3 + ... + n
+                         = (n*(n+1))/2;
+
+AverageNumberOfComparisons = totalNumberOfComparisons/NumberOfCases
+                           = ((n*(n+1))/2)/n;
+                           = (n+1)/2
+
+In the worst case element wont exist in the array, we would have to check all (n) the elements in this case.
+
+Both average and worst case times of linear search is big-Theta of n.
