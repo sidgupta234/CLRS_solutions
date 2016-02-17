@@ -1,0 +1,2 @@
+If we use binary search technique, yes we'll get correct location for the element in O(log n), though we would have to seperately move
+the other elements to there new correct positions which would take O(n), resulting in a O(n* n*(log n)) running time.
