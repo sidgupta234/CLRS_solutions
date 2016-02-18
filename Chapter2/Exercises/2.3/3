@@ -3,13 +3,12 @@ let n = 2 ^ k,
 base case k = 1, T(2) = 2*log 2^1 = 2 
 
 Induction Hypothesis is the predicate T(k-1) = 2^(k-1) * log(2^(k-1) ) = (k-1)*(2^(k-1))
-
-let I.H. be true, then,
 T(2^k) = 2 * T ( 2 ^ (k-1) ) + 2^k
 
+let I.H. be true, then,
 Substituting for T(2^(k-1)),
 
-       = 2 * (k-1) * 2^(k-1) + 2^k
+T(2^k) = 2 * (k-1) * 2^(k-1) + 2^k
        = 2^k * (k-1+1) = k*2^k
 
 Q.E.D.
