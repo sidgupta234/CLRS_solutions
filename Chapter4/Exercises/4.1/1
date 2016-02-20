@@ -1,3 +1,3 @@
-The 'MaxSubarray' function returns the lowest element of A if all elements of A are negative. We can modify this function to return 0 in
+The 'MaxSubarray' function returns the highest element of A if all elements of A are negative. We can modify this function to return 0 in
 such a case, which would imply that the empty subarray is the MaxSubarray. We can do this by returning max(0,A[i]) in the base case
 instead of returning A[i], here A[i] is the only element of the subarray.
